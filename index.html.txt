@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Go Out With Me?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey [Her Name],</h1>
+    <p>I've been thinking a lot about you... so I just have one question:</p>
+    <p><strong>Will you go out with me?</strong></p>
+    <button onclick="askOut()">Click to Answer</button>
+
+    <script>
+        function askOut() {
+            const answer = confirm("Do you want to go out with me?");
+            
+            if (answer) {
+                alert("Yay! I'm so happy! 💖 Let's plan something fun!");
+            } else {
+                alert("That's okay! Maybe another time! 😅");
+            }
+        }
+    </script>
+</body>
+</html>
